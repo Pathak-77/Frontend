@@ -9,10 +9,10 @@ export const getAllProducts = async (id,typeId)=>{
     }
 
     try{
-        const result = await axios(url,{
+        const fetchedItems = await axios(url,{
             method:"GET"
         });
-        return result?.data;
+        return fetchedItems?.data;
     }
     catch(err){
         console.error(err);
@@ -22,10 +22,10 @@ export const getAllProducts = async (id,typeId)=>{
 export const getProductBySlug = async (slug)=>{
     const url = API_BASE_URL + API_URLS.GET_PRODUCTS + `?slug=${slug}`;
     try{
-        const result = await axios(url,{
+        const fetchedItems = await axios(url,{
             method:"GET",
         });
-        return result?.data?.[0];
+        return fetchedItems?.data?.[0];
     }
     catch(err){
         console.error(err);
