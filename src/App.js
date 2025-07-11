@@ -9,17 +9,22 @@ import ProductList from "./assets/pages/ProductList/ProductList";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { loadCategories } from "./store/features/category";
+import { setLoading } from "./store/features/loader";
 
 const dispatch = useDispatch();
 
 const categories = useEffect(() => {
+  dispatch(setLoading(true))
   fetchCategories()
     .then((res) => {
       useDispatch(loadCategories(res));
     })
     .catch((err) => {
       console.log(err);
-    });
+    })
+    .finally(
+      dispatch(setLoading(false))
+    );
 },[dispatch]);
 
 function App() {
