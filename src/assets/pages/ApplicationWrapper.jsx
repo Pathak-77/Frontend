@@ -7,6 +7,7 @@ import { useSelector } from 'react-redux'
 const ApplicationWrapper = () => {
 
   const isLoading = useSelector((state) => state?.loaderState.loading);
+  
   return (
     <div>
       <Navigation/>

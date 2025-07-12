@@ -5,7 +5,7 @@ import ProductListPage from "./assets/pages/ProductList/ProductList";
 import ProductDetails from "./assets/pages/ProductDetail/ProductDetails";
 import { loadProductBySlug } from "./routes/products";
 
-export const router = createBrowserRouter([
+ const router = createBrowserRouter([
   {
     path: "/",
     element: <ApplicationWrapper />,
@@ -30,3 +30,4 @@ export const router = createBrowserRouter([
     ]
   }
 ]);
+export default router;
