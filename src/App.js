@@ -29,10 +29,10 @@ import { setLoading } from "./store/features/loader";
 
 function App() {
   return (
-<>
-     <Navbar />
+    <>
+      <HeroSection/>
       <Footer content={content?.footer} />
-      </>
+    </>
   );
 }
 
