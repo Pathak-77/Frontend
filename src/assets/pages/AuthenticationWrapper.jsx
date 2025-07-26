@@ -1,5 +1,4 @@
 import React from 'react'
-import Navigation from '../components/Navigation/Navigation'
 import { Outlet } from 'react-router-dom'
 import BckgImage from '../img/bg-1.png';
 import { useSelector } from 'react-redux';

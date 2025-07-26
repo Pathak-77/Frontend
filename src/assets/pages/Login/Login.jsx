@@ -10,7 +10,7 @@ const Login = () => {
     userName:'',
     password:''
   });
-  const [error,setError] =useState('');
+  const [error,setError] = useState('');
   const dispatch = useDispatch();
   const navigate = useNavigate();
 

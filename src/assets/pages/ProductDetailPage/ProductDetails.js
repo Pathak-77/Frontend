@@ -1,19 +1,18 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
 import { Link, useLoaderData, useParams } from 'react-router-dom'
-import Breadcrumb from '../../components/Breadcrumb/Breadcrumb';
-import content from '../../data/content.json'
-import Rating from '../../components/Rating/Rating';
-import SizeFilter from '../../components/Filters/SizeFilter';
+import Breadcrumb from '../../../components/Breadcrumb/Breadcrumb';
+import Rating from '../../../components/Rating/Rating';
+import SizeFilter from '../../../components/Filters/SizeFilter';
 import ProductColors from './ProductColors';
-import SvgCreditCard from '../../components/common/SvgCreditCard';
-import SvgCloth from '../../components/common/SvgCloth';
-import SvgShipping from '../../components/common/SvgShipping';
-import SvgReturn from '../../components/common/SvgReturn';
-import SectionHeading from '../../components/Sections/SectionsHeading/SectionHeading';
-import ProductCard from '../ProductListPage/ProductCard';
+import SvgCreditCard from '../../../components/common/SvgCreditCard';
+import SvgCloth from '../../../components/common/SvgCloth';
+import SvgShipping from '../../../components/common/SvgShipping';
+import SvgReturn from '../../../components/common/SvgReturn';
+import SectionHeading from '../../../components/Sections/SectionsHeading/SectionHeading';
+import ProductCard from '../../../assets/pages/ProductList/ProductCard';
 import { useDispatch, useSelector } from 'react-redux';
 import _ from 'lodash';
-import { getAllProducts } from '../../api/fetchProducts';
+import { getAllProducts } from '../../../api/fetchProducts';
 import { addItemToCartAction } from '../../store/actions/cartAction';
 
 
@@ -81,8 +80,7 @@ const ProductDetails = () => {
   }, [productCategory, product]);
 
   const addItemToCart = useCallback(()=>{
-    //dispatch(addToCart({id:product?.id,quantity:1}));
-    //const selectedSize = 
+   
     console.log("size ",selecteSize);
     if(!selecteSize){
       setError('Please select size');
