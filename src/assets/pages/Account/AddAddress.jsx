@@ -1,8 +1,8 @@
 import React, { useCallback, useState } from 'react'
 import { useDispatch } from 'react-redux';
-import { setLoading } from '../../store/features/common';
-import { addAddressAPI } from '../../api/userInfo';
-import { saveAddress } from '../../store/features/user';
+import { setLoading } from '../../../store/features/loader';
+import { addAddressAPI } from '../../../api/userInfo';
+import { saveAddress } from '../../../store/features/user';
 
 const AddAddress = ({onCancel}) => {
     const [values,setValues] = useState({

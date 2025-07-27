@@ -1,9 +1,9 @@
 import React, { useCallback, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { removeAddress, selectUserInfo } from "../../store/features/user";
+import { removeAddress, selectUserInfo } from "../../../store/features/user";
 import AddAddress from "./AddAddress";
-import { setLoading } from "../../store/features/common";
-import { deleteAddressAPI } from "../../api/userInfo";
+import { setLoading } from "../../../store/features/loader";
+import { deleteAddressAPI } from "../../../api/userInfo";
 
 const Profile = () => {
   const userInfo = useSelector(selectUserInfo);
