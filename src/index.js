@@ -8,13 +8,14 @@ import  store  from './store/store'
 import { Provider } from 'react-redux'
 import routes from './customRoutes'
 import App from './App';
+import Register from './assets/pages/Register/Register';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
      <RouterProvider router={routes}>
        
-         <App />
+         <Register />
       
      </RouterProvider>
      </Provider>

@@ -1,10 +1,9 @@
 import React, { useCallback, useState } from 'react'
-import GoogleSignIn from '../../components/Buttons/GoogleSignIn';
-import { Link } from 'react-router-dom';
+import GoogleSignIn from '../../../components/GoogleSignIn';
+import { Link, useNavigate } from 'react-router-dom';
 import { setLoading } from "../../../store/features/loader";
 import { useDispatch } from 'react-redux';
-import { registerAPI } from '../../api/authentication';
-import VerifyCode from './VerifyCode';
+import { registerAPI } from '../../../api/authentication';
 
 const Register = () => {
   const [values,setValues] =useState({
@@ -14,9 +13,9 @@ const Register = () => {
     lastName: "",
     phone:'',
   });
-  const [error,setError] =useState('');
+  const [error,setError] = useState('');
   const dispatch = useDispatch();
-  const [enableVerify,setEnableVerify] =useState(false);
+  const navigate = useNavigate();
 
   const onSubmit= useCallback((e)=>{
     e.preventDefault();
@@ -24,7 +23,7 @@ const Register = () => {
     dispatch(setLoading(true));
     registerAPI(values).then(res=>{
         if(res?.code === 200){
-          setEnableVerify(true);
+          navigate("/auth/login");
         }
     }).catch(err=>{
       setError("Invalid or Email already exist!")
@@ -45,7 +44,7 @@ const Register = () => {
 
   return (
     <div className='px-8 w-full lg:w-[70%]'>
-      {!enableVerify && 
+      
       <>
       <p className='text-3xl font-bold pb-4 pt-4'>Sign Up</p>
       <GoogleSignIn/>
@@ -61,10 +60,9 @@ const Register = () => {
         </form>
       </div>
       {error && <p className='text-lg text-red-700'>{error}</p>}
-      <Link to={"/v1/login"} className='underline text-gray-500 hover:text-black'>Already have an  account? Log in</Link>
+      <Link to={"/auth/login"} className='underline text-gray-500 hover:text-black'>Already have an  account? Log in</Link>
       </>
-      }
-      {enableVerify && <VerifyCode email={values?.email}/>}
+      
     </div>
   )
 }

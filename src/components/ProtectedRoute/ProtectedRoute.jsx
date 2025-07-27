@@ -4,6 +4,7 @@ import { isTokenValid } from '../../utils/jwt-helper';
 
 const ProtectedRoute = ({children}) => {
   const navigate = useNavigate();
+  
   useEffect(()=>{
     if(!isTokenValid()){
         navigate("/auth/login")

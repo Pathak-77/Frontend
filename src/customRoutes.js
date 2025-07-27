@@ -6,17 +6,17 @@ import ProductDetails from "./assets/pages/ProductDetail/ProductDetails";
 import { loadProductBySlug } from "./routes/products";
 import AuthenticationWrapper from "./assets/pages/ApplicationWrapper";
 import Login from "./assets/pages/Login/Login";
-import Register from "./assets/pages/Register";
+import Register from "./assets/pages/Register/Register";
 import OAuth2LoginCallback from "./assets/pages/OAuth2LoginCallback";
 import Cart from "./assets/pages/Cart/Cart";
 import Account from "./assets/pages/Account/Account";
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
-import Checkout from "./pages/Checkout/Checkout";
-import ConfirmPayment from "./pages/ConfirmPayment/ConfirmPayment";
-import OrderConfirmed from "./pages/OrderConfirmed/OrderConfirmed";
-import Profile from "./pages/Account/Profile";
-import Orders from "./pages/Account/Orders";
-import Settings from "./pages/Account/Settings";
+import Checkout from "./assets/pages/Checkout/Checkout";
+import ConfirmPayment from "./assets/pages/ConfirmPayment/ConfirmPayment";
+import OrderConfirmed from "./assets/pages/OrderConfirmed/OrderConfirmed";
+import Profile from "./assets/pages/Account/Profile";
+import Orders from "./assets/pages/Account/Orders";
+import Settings from "./assets/pages/Account/Settings";
 
  const router = createBrowserRouter([
   {
@@ -93,10 +93,6 @@ import Settings from "./pages/Account/Settings";
     {
       path:'/confirmPayment',
       element:<ConfirmPayment />
-    },
-    {
-      path:'/admin/*',
-      element:<ProtectedRoute><AdminPanel /></ProtectedRoute>
     }
 ]);
 export default router;
