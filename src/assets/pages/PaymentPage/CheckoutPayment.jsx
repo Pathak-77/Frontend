@@ -1,10 +1,11 @@
 import React, { useCallback, useState } from 'react';
 import {AddressElement, CardElement, PaymentElement, ShippingAddressElement, useElements, useStripe} from '@stripe/react-stripe-js';
-import { placeOrderAPI } from '../../api/order';
+import { placeOrderAPI } from '../../../api/order';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectCartItems } from '../../store/features/cart';
-import { createOrderRequest } from '../../utils/order-util';
-import { setLoading } from '../../store/features/common';
+import { selectCartItems } from '../../../store/features/cart';
+import { createOrderRequest } from '../../../utils/order-util';
+import { setLoading } from '../../../store/features/loader';
+
 
 const CheckoutForm = ({userId,addressId}) => {
 

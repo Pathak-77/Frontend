@@ -1,8 +1,8 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { selectCartItems } from '../../store/features/cart';
-import { fetchUserDetails } from '../../api/userInfo';
-import { setLoading } from '../../store/features/common';
+import { selectCartItems } from '../../../store/features/cart';
+import { fetchUserDetails } from '../../../api/userInfo';
+import { setLoading } from '../../../store/features/loader';
 import { useNavigate } from 'react-router-dom';
 import PaymentPage from '../PaymentPage/PaymentPage';
 

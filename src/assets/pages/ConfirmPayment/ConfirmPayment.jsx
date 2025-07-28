@@ -1,11 +1,11 @@
 import { useStripe } from '@stripe/react-stripe-js';
 import React, { useEffect, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
-import { confirmPaymentAPI } from '../../api/order';
+import { confirmPaymentAPI } from '../../../api/order';
 import { useDispatch, useSelector } from 'react-redux';
-import { setLoading } from '../../store/features/common';
-import Spinner from '../../components/Spinner/Spinner';
-import { clearCart } from '../../store/actions/cartAction';
+import { setLoading } from '../../../store/features/loader';
+import Spinner from '../../../components/Spinner/Spinner';
+import { clearCart } from '../../../store/features/cartAction';
 
 const ConfirmPayment = () => {
 

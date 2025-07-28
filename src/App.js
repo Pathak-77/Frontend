@@ -30,7 +30,6 @@ import { setLoading } from "./store/features/loader";
 function App() {
   return (
     <>
-      <HeroSection/>
       <Footer content={content?.footer} />
     </>
   );

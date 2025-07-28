@@ -15,7 +15,7 @@ root.render(
   <Provider store={store}>
      <RouterProvider router={routes}>
        
-         <Register />
+         <App />
       
      </RouterProvider>
      </Provider>

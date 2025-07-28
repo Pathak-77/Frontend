@@ -4,11 +4,11 @@ import { selectCartItems } from '../../../store/features/cart';
 import { NumberInput } from '../../../components/NumberInput/NumberInput';
 import { delteItemFromCartAction, updateItemToCartAction } from '../../../store/features/cartAction';
 import DeleteIcon from '../../../components/icon/DeleteIcon';
-import Modal from 'react-modal';
+import Modal from 'react-modal'
 import { customStyles } from '../../../components/icon/Model';
 import { isTokenValid } from '../../../utils/jwt-helper';
 import { Link, useNavigate } from 'react-router-dom';
-import EmptyCart from '../../assets/img/empty_cart.png';
+import EmptyCart from '../../img/empty_cart.png';
 
 const headers = [
     "Product Details","Price","Quantity","Shipping","SubTotal","Action"
@@ -18,7 +18,7 @@ const headers = [
 const Cart = () => {
   const cartItems = useSelector(selectCartItems);
   const dispatch = useDispatch();
-  const [modalIsOpen, setModalIsOpen] = React.useState(false);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
   const [deleteItem,setDeleteItem] = useState({}); 
   const navigate = useNavigate();
 

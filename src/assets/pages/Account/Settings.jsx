@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react'
-import { logOut } from '../../utils/jwt-helper';
+import { logOut } from '../../../utils/jwt-helper';
 import { useNavigate } from 'react-router-dom';
 
 const Settings = () => {
