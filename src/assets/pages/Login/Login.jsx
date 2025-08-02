@@ -1,68 +1,147 @@
-import React, { useCallback, useState } from 'react';
-import GoogleSignIn from '../../../components/GoogleSignIn';
-import { Link, useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-import { setLoading } from '../../../store/features/loader';
-import { loginAPI } from '../../../api/authentication';
-import { saveToken } from '../../../utils/jwt-helper';
+import React, { useCallback, useState } from "react";
+import GoogleSignIn from "../../../components/GoogleSignIn";
+import { Link, useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { setLoading } from "../../../store/features/loader";
+import { loginAPI } from "../../../api/authentication";
+import { saveToken } from "../../../utils/jwt-helper";
 const Login = () => {
-  const [values,setValues] =useState({
-    userName:'',
-    password:''
+  const [values, setValues] = useState({
+    userName: "",
+    password: "",
   });
-  const [error,setError] = useState('');
+  const [error, setError] = useState("");
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const onSubmit= useCallback((e)=>{
-    e.preventDefault();
-    setError('');
-    dispatch(setLoading(true));
-    loginAPI(values).then(res=>{
-        if(res?.token){
-          saveToken(res?.token);
-          navigate('/')
-        }
-        else{
-          setError("Something went wrong!");
-        }
-    }).catch(err=>{
-  
-      setError("Invalid Credentials!");
-    }).finally(()=>{
-      dispatch(setLoading(false));
-    });
+  const onSubmit = useCallback(
+    (e) => {
+      e.preventDefault();
+      setError("");
+      dispatch(setLoading(true));
+      loginAPI(values)
+        .then((res) => {
+          if (res?.token) {
+            saveToken(res?.token);
+            navigate("/");
+          } else {
+            setError("Something went wrong!");
+          }
+        })
+        .catch((err) => {
+          setError("Invalid Credentials!");
+        })
+        .finally(() => {
+          dispatch(setLoading(false));
+        });
+    },
+    [dispatch, navigate, values]
+  );
 
-
-  },[dispatch, navigate, values]);
-
-  const handleOnChange = useCallback((e)=>{
+  const handleOnChange = useCallback((e) => {
     e.persist();
-    setValues(values=>({
+    setValues((values) => ({
       ...values,
-      [e.target.name]:e.target?.value,
-    }))
-  },[]);
+      [e.target.name]: e.target?.value,
+    }));
+  }, []);
 
   return (
-    <div className='px-8 w-full lg:w-[70%]'>
+    <div className="w-full min-h-screen flex items-center justify-center">
+      <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-8">
+        <h2 className="text-4xl font-bold text-center mb-6">Login</h2>
 
-      <p className='text-3xl font-bold pb-4 pt-4'>Sign In</p>
-      <GoogleSignIn/>
-      <p className='text-gray-500 items-center text-center w-full py-2'>OR</p>
-    
-      <div className='pt-4'>
-        <form onSubmit={onSubmit}>
-          <input type="email" name='userName' value={values?.userName} onChange={handleOnChange} placeholder='Email address' className='h-[48px] w-full border p-2 border-gray-400' required/>
-          <input type="password" name='password' value={values?.password} onChange={handleOnChange} placeholder='Password' className='h-[48px] mt-8 w-full border p-2 border-gray-400' required autoComplete='new-password'/>
-          <Link className='text-right w-full float-right underline pt-2 text-gray-500 hover:text-black'>Forgot Password?</Link>
-          <button className='border w-full rounded-lg h-[48px] mb-4 bg-black text-white mt-4 hover:opacity-80'>Sign In</button>
+        <GoogleSignIn />
+
+        <div className="flex items-center justify-center my-6">
+          <div className="h-px flex-grow bg-gray-300" />
+          <span className="px-3 text-gray-500 text-sm">OR</span>
+          <div className="h-px flex-grow bg-gray-300" />
+        </div>
+
+        <form onSubmit={onSubmit} autoComplete="off" className="space-y-4">
+          <div>
+            <label
+              htmlFor="name"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Username
+            </label>
+            <input
+              type="text"
+              name="name"
+              value={values?.name}
+              onChange={handleOnChange}
+              placeholder="Username"
+              className="mt-1 block w-full h-[44px] border border-gray-300 rounded-lg px-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+              required
+            />
+          </div>
+
+          <div>
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Email Address
+            </label>
+            <input
+              type="email"
+              name="email"
+              value={values?.email}
+              onChange={handleOnChange}
+              placeholder="you@email.com"
+              className="mt-1 block w-full h-[44px] border border-gray-300 rounded-lg px-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+              required
+              autoComplete="off"
+            />
+          </div>
+
+          <div>
+            <label
+              htmlFor="password"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Password
+            </label>
+            <input
+              type="password"
+              name="password"
+              value={values?.password}
+              onChange={handleOnChange}
+              placeholder="••••••••"
+              className="mt-1 block w-full h-[44px] border border-gray-300 rounded-lg px-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+              required
+              autoComplete="new-password"
+            />
+          </div>
+
+          <button
+            type="submit"
+            className="w-full h-[48px] bg-black text-white rounded-lg hover:opacity-90 transition duration-150"
+          >
+            Log in
+          </button>
         </form>
-      </div>
-      {error && <p className='text-lg text-red-700'>{error}</p>}
-      <Link to={"/v1/register"} className='underline text-gray-500 hover:text-black'>Don’t have an account? Sign up</Link>
-    </div>
-  )
-}
 
-export default Login
+        {error && (
+          <p className="text-center text-red-600 mt-4 text-sm font-medium">
+            {error}
+          </p>
+        )}
+
+        <p className="text-center mt-6 text-sm text-gray-600">
+          Already have an account?{" "}
+          <Link
+            to="/auth/login"
+            className="underline text-black hover:text-gray-800 transition"
+          >
+            Log in
+          </Link>
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default Login;

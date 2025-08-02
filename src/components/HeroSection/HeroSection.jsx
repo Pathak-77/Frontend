@@ -1,78 +1,60 @@
-// import React from "react";
-// import Slider from "react-slick";
-// import CarouselImage from "./CarouselImage";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+import React from "react";
+import Men from "../../assets/img/men-jewellery.avif";
+import Women from "../../assets/img/women-jewellery.jpg";
 
-// import slide2 from '../assets/Images/1.jpg'
-// import slide1 from '../assets/Images/2.jpg'
-// import slide3 from '../assets/Images/3.jpeg'
-// import slide4 from '../assets/Images/4.jpg'
-// import slide5 from '../assets/Images/5.jpg'
-// import slide6 from '../assets/Images/6.jpg'
+const HeroSection = () => {
+  return (
+    <main className="overflow-hidden" >
+      <div className="grid grid-cols-2 w-full h-screen mb-5">
+        <div className="relative overflow-hidden group">
+          <div className="absolute ml-0 inset-0 bg-gradient-to-tr from-transparent to-black opacity-50 group-hover:opacity-100 transition-opacity duration-500">
+            <img
+              src={Men}
+              alt="Men's Jewelry"
+              className="w-full h-full object-cover"
+            />
+          </div>
 
+          <div className="absolute bottom-1/2 left-6 right-6 text-white text-center text-xl font-semibold tracking-wide opacity-0 group-hover:opacity-100 transition-opacity duration-500 drop-shadow-lg">
+            <p>
+              MEN
+              <br />
+              <span className="text-lg font-thin">
+                for your beloved husband, son, brother, or friend with a
+                thoughtful gift that shows your appreciation.
+              </span>
+            </p>
+            <span className="italic">you</span>.
+          </div>
+        </div>
+        <div className="relative overflow-hidden group">
+          <div className="absolute inset-0 bg-gradient-to-tr from-transparent to-black opacity-50 group-hover:opacity-100 transition-opacity duration-500">
+            <img
+              src={Women}
+              alt="Women's Jewelry"
+              className="w-full h-full object-cover"
+            />
+          </div>
 
+          <div className="absolute bottom-1/2 left-6 right-6 text-white text-center text-xl font-semibold tracking-wide opacity-0 group-hover:opacity-100 transition-opacity duration-500 drop-shadow-lg">
+            <p>
+              Women
+              <br />
+              <span className="text-lg font-thin">
+                for your beloved wife, daughter, sister, or family with a
+                thoughtful gift that shows your affection.
+              </span>
+            </p>
+            <span className="italic">you</span>.
+          </div>
+        </div>
 
-// const slides = [
-//   {
-//             path: slide1,
-//             alt: "slide1",
-//             text:"2024- snowleopard conservation awareness",
-//         },
-//         {
-//             path: slide2,
-//             alt: "slide2",
-//             text:"2018- Koshi Tappu Wildlife Reserve",
-//         },
-//         {
-//             path: slide3,
-//             alt: "slide3",
-//             text:"2016- Koshi Tappu Wildlife Reserve",
-//         },
-//         {
-//             path: slide4,
-//             alt: "slide4",
-//             text:"2015- clean tapwater program",
-//         },
-//         {
-//             path: slide5,
-//             alt: "slide5",
-//             text:"2012- awareness of HIV-AIDS",
-//         }, 
-//         {
-//             path: slide6,
-//             alt: "slide6",
-//             text:"2013- women for forest",
-//         },
-// ]
+        <h1 className="absolute left-1/2 -translate-x-1/2 translate-y-[300px] text-[56px] font-semibold">
+          AETHER
+        </h1>
+      </div>
+    </main>
+  );
+};
 
-// const HeroSection = () => {
-//    const settings = {
-//     dots: true,
-//     infinite: true,
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     autoplay: true,
-//     speed: 2000,
-//     autoplaySpeed: 4400,
-//     cssEase: "linear"
-
-//   };
-//   return (
-//     <div className="block overflow-hidden content-center h-[600px] w-full mb-3">
-//       <Slider {...settings}>
-//         {slides.map((slide) =>{
-//           return(
-//             <div>
-//               <CarouselImage image={slide.path} alt={slide.path} text={slide.text} />
-//             </div>
-//           )
-//         } 
-//         )}
-        
-//       </Slider>
-//     </div>
-//   );
-// }
-
-// export default HeroSection
+export default HeroSection;

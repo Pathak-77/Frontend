@@ -4,7 +4,9 @@
 
 body {
   margin: 0;
+  margin-top: 6rem;
   font-family: "Inter";
+  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

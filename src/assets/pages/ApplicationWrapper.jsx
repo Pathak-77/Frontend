@@ -1,5 +1,5 @@
 import React from 'react'
-import Navigation from '../../components/Navbar/Navigation'
+import Navigation from '../../components/Navbar/Navbar'
 import Spinner from "../../components/Spinner/Spinner"
 import { Outlet } from 'react-router-dom'
 import { useSelector } from 'react-redux'

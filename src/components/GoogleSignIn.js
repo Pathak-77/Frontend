@@ -9,7 +9,7 @@ const GoogleSignIn = () => {
   },[])
 
   return (
-    <button onClick={handleClick} className='flex justify-center items-center border w-full rounded border-gray-600 h-[48px] hover:bg-slate-50'>
+    <button onClick={handleClick} className='flex justify-center items-center  w-full rounded  h-[48px] hover:underline'>
         <img src={GoogleLogo} alt='google-icon'/>
         <p className='px-2 text-gray-500'>Continue With Google</p>
     </button>
