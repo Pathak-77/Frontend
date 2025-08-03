@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import HeroSection from "./components/HeroSection/HeroSection";
+import Items from "./components/Items/Items";
 import Footer from "./components/Footer/Footer";
 import content from "./data/content.json";
 import { useDispatch } from "react-redux";
@@ -28,7 +29,8 @@ function App() {
   return (
     <>
     <HeroSection/>
-      <Footer content={content?.footer} />
+    <Items/>
+    <Footer content={content?.footer} />
     </>
   );
 }

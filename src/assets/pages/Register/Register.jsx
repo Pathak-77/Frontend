@@ -70,7 +70,7 @@ const Register = () => {
                 name="firstName"
                 value={values?.firstName}
                 onChange={handleOnChange}
-                placeholder="John"
+                placeholder="Bill"
                 className="mt-1 block w-full h-[44px] border border-gray-300 rounded-lg px-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-black"
                 required
               />
@@ -85,7 +85,7 @@ const Register = () => {
                 name="lastName"
                 value={values?.lastName}
                 onChange={handleOnChange}
-                placeholder="Doe"
+                placeholder="Windows"
                 className="mt-1 block w-full h-[44px] border border-gray-300 rounded-lg px-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-black"
                 required
               />
@@ -101,7 +101,7 @@ const Register = () => {
               name="email"
               value={values?.email}
               onChange={handleOnChange}
-              placeholder="you@example.com"
+              placeholder="you@email.com"
               className="mt-1 block w-full h-[44px] border border-gray-300 rounded-lg px-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-black"
               required
               autoComplete="off"
@@ -117,7 +117,7 @@ const Register = () => {
               name="phone"
               value={values?.phone}
               onChange={handleOnChange}
-              placeholder="+91 98765 43210"
+              placeholder="+91 98756 43210"
               className="mt-1 block w-full h-[44px] border border-gray-300 rounded-lg px-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-black"
               required
             />
