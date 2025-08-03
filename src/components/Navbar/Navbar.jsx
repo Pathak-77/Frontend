@@ -7,7 +7,7 @@ import SearchIcon from "../icon/SearchIcon";
 import SearchBar from "../Search/SearchBar";
 import Hamburger from "../icon/Hamburger";
 
-export default function GlassmorphNavbar() {
+export default function GlassmorphNavbar({menuOpen}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const cartLength = countCartItems;
@@ -40,7 +40,7 @@ export default function GlassmorphNavbar() {
       <div className="flex w-full items-center justify-between gap-3">
 
         {/* Hamburger menu */}
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 hover:cursor-pointer  hover:shadow-white/50 hover:shadow-2xl " onClick={menuOpen} >
           <Hamburger />
         </div>
 
@@ -54,7 +54,7 @@ export default function GlassmorphNavbar() {
         <div className="relative flex items-center">
       <div
         className={`absolute right-[130px]  transition-all duration-300 ease-in-out ${
-          isOpen ? "w-48 opacity-100 mr-10" : "w-0 opacity-0 overflow-hidden"
+          isOpen ? "w-48 opacity-100 mr-[69px]" : "w-0 opacity-0 overflow-hidden"
         }`}
       >
         <SearchBar
@@ -74,12 +74,14 @@ export default function GlassmorphNavbar() {
           </button>
         </li>
         <li>
-          <button onClick={() => navigate("/account-details/profile")}>
-            <AccountIcon />
+          <button 
+            className="p-2 rounded-full hover:shadow-xl hover:shadow-white/50 hover:cursor-pointer"
+            onClick={() => navigate("/account-details/profile")}>
+              <AccountIcon />
           </button>
         </li>
         <li>
-          <Link to="/cart-items" className="relative flex items-center">
+          <Link to="/cart-items" className="relative flex items-center p-2 rounded-full hover:shadow-xl hover:shadow-white/50 hover:cursor-pointer">
             <CartIcon />
             {cartLength > 0 && (
               <div className="absolute -top-2 -right-2 inline-flex items-center justify-center h-5 w-5 bg-black text-white rounded-full border-2 border-white text-xs">
