@@ -19,6 +19,7 @@ const Login = () => {
       e.preventDefault();
       setError("");
       dispatch(setLoading(true));
+
       loginAPI(values)
         .then((res) => {
           if (res?.token) {
@@ -65,7 +66,7 @@ const Login = () => {
               htmlFor="name"
               className="block text-sm font-medium text-gray-700"
             >
-              Username
+              Your Email
             </label>
             <input
               type="text"

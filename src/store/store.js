@@ -4,6 +4,7 @@ import categoryReducer from './features/category';
 import loaderReducer from './features/loader';
 import cartReducer from './features/cart';
 import userReducer from './features/user';
+import barReducer  from "./features/bar";
 
 
 const rootReducer = combineReducers({
@@ -11,7 +12,8 @@ const rootReducer = combineReducers({
         categoryState: categoryReducer,
         loaderState: loaderReducer,
         cartState: cartReducer,
-        userState: userReducer
+        userState: userReducer,
+        barState: barReducer,
 })
 
 const store = configureStore({

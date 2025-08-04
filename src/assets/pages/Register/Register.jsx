@@ -17,8 +17,8 @@ const Register = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const onSubmit = useCallback(
-    (e) => {
+  const onSubmit = useCallback((e) => 
+    {
       e.preventDefault();
       setError("");
       dispatch(setLoading(true));

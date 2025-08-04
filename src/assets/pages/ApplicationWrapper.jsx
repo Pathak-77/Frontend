@@ -16,7 +16,7 @@ const ApplicationWrapper = () => {
       <Outlet/>
       { isLoading && < Spinner/> }
     </div>
-  )
+  );
 }
 
 export default ApplicationWrapper

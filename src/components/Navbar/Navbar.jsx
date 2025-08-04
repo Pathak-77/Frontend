@@ -1,4 +1,5 @@
-import { React, useState } from "react";
+import { React, useState} from "react";
+import { useSelector } from 'react-redux'
 import { AccountIcon } from "../icon/AccountIcon";
 import { CartIcon } from "../icon/CartIcon";
 import { Link, useNavigate } from "react-router-dom";
@@ -9,6 +10,10 @@ import Hamburger from "../icon/Hamburger";
 
 
 export default function GlassmorphNavbar({ menuOpen }) {
+
+  const isVisible = useSelector((state) => state?.barState?.visible);
+  console.log(isVisible)
+
   const [isOpen, setIsOpen] = useState(false);
 
   const cartLength = countCartItems;
@@ -20,7 +25,7 @@ export default function GlassmorphNavbar({ menuOpen }) {
     let url = slug ? slug : "";
      if (url === "") {
       return;
-  }
+    }
 
     navigate(`/products/${url}`);
   };
@@ -41,7 +46,8 @@ export default function GlassmorphNavbar({ menuOpen }) {
   };
 
   return (
-    <nav className=" fixed h-[53px] left-1/2 top-0 z-50 mt-7 flex w-11/12 max-w-7xl -translate-x-1/2 items-center rounded-full bg-background/20 p-3 backdrop-blur-lg md:rounded-full">
+    <>
+    { isVisible && <nav className=" fixed h-[53px] left-1/2 top-0 z-50 mt-7 flex w-11/12 max-w-7xl -translate-x-1/2 items-center rounded-full bg-background/20 p-3 backdrop-blur-lg md:rounded-full">
       <div className="flex w-full items-center justify-between gap-3">
         {/* Hamburger menu */}
         <div
@@ -103,6 +109,7 @@ export default function GlassmorphNavbar({ menuOpen }) {
           </ul>
         </div>
       </div>
-    </nav>
+    </nav>}
+  </>
   );
 }

@@ -1,10 +1,43 @@
 import React from "react";
+import { motion, Transition } from "motion/react";
 import Men from "../../assets/img/men-jewellery.avif";
 import Women from "../../assets/img/women-jewellery.jpg";
+import { useDispatch } from "react-redux";
+import { setVisible } from "../../store/features/bar";
 
 const HeroSection = () => {
+  const dispatch = useDispatch();
+
+  const [isVisible, setIsVisible] = React.useState(true);
+  const [scroll , setScroll] = React.useState(false);
+
+  const handleScroll = ()=> {
+     if (window.scrollY > 0) {
+      
+      setScroll(true); 
+    }
+  }
+
+  const EndState = ()=>{
+    setIsVisible(false);
+    dispatch(setVisible(true));
+  }
+    React.useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  
+
+  const transition = {
+    duration: 1,
+    repeatType: "reverse",
+    ease: "easeInOut",
+  };
+
   return (
-    <main className="overflow-hidden" >
+    <main className="overflow-hidden">
       <div className="grid grid-cols-2 w-full h-screen mb-5">
         <div className="relative overflow-hidden group">
           <div className="absolute ml-0 inset-0 bg-gradient-to-tr from-transparent to-black opacity-50 group-hover:opacity-100 transition-opacity duration-500">
@@ -49,9 +82,21 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <h1 className="absolute left-1/2 -translate-x-1/2 translate-y-[300px] text-[56px] font-semibold">
-          AETHER
-        </h1>
+        {isVisible &&
+          <motion.h1
+          className="absolute left-[11.84em] top-1/2 text-[50px] font-semibold"
+            initial={{ offsetDistance: "0%", scale: 2.5 }}
+            animate={scroll?{y: '-45vh', scale:0.5}:{ offsetDistance: "100%", scale: 1 }}
+            transition={transition}
+            onAnimationComplete={()=>
+              {if(scroll) {
+                EndState();
+              }}
+            }
+          >
+            AETHER
+          </motion.h1>}
+       
       </div>
     </main>
   );
