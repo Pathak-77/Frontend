@@ -14,6 +14,6 @@ const GoogleSignIn = () => {
         <p className='px-2 text-gray-500'>Continue With Google</p>
     </button>
   )
-}
+} 
 
 export default GoogleSignIn

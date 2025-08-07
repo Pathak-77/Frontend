@@ -7,18 +7,18 @@ import { registerAPI } from "../../../api/authentication";
 
 const Register = () => {
   const [values, setValues] = useState({
-    email: "",
-    password: "",
     firstName: "",
     lastName: "",
-    phone: "",
+    password: "",
+    email: "",
+    phoneNumber: "",
   });
   const [error, setError] = useState("");
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const onSubmit = useCallback((e) => 
-    {
+  const onSubmit = useCallback(
+    (e) => {
       e.preventDefault();
       setError("");
       dispatch(setLoading(true));
@@ -35,7 +35,7 @@ const Register = () => {
           dispatch(setLoading(false));
         });
     },
-    [dispatch, values]
+    [dispatch, values, navigate]
   );
 
   const handleOnChange = useCallback((e) => {
@@ -114,8 +114,8 @@ const Register = () => {
             </label>
             <input
               type="tel"
-              name="phone"
-              value={values?.phone}
+              name="phoneNumber"
+              value={values?.phoneNumber}
               onChange={handleOnChange}
               placeholder="+91 98756 43210"
               className="mt-1 block w-full h-[44px] border border-gray-300 rounded-lg px-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-black"

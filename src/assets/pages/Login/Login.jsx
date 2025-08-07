@@ -70,8 +70,8 @@ const Login = () => {
             </label>
             <input
               type="text"
-              name="name"
-              value={values?.name}
+              name="userName"
+              value={values.userName}
               onChange={handleOnChange}
               placeholder="Username"
               className="mt-1 block w-full h-[44px] border border-gray-300 rounded-lg px-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
