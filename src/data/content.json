@@ -1,509 +1,478 @@
 {
-    "pages":{
-        "app":{
-            "sections":[
-                {
-                    "title":"Categories For Women",
-                    "data":[
-                        {
-                            "title":" Sweetshirt",
-                            "description":"Explore Now!",
-                            "image":"./images/category-women-hoodies.jpg"   
-                        },
-                        {
-                            "title":"Coats & Parkas",
-                            "description":"Explore Now!",
-                            "image":"./images/category-women-coats.jpg"   
-                        },
-                        {
-                            "title":"Tees & T-Shirt",
-                            "description":"Explore Now!",
-                            "image":"./images/category-women-tshirts.png"   
-                        },
-                        {
-                            "title":"Shorts",
-                            "description":"Explore Now!",
-                            "image":"./images/category-women-shorts.jpg"   
-                        }
-                    ]
-                },
-                {
-                    "title":"Categories For Men",
-                    "data":[
-                        {
-                            "title":"Shirts",
-                            "description":"Explore Now!",
-                            "image":"./images/category-men-shirts.jpg"   
-                        },
-                        {
-                            "title":"Jeans",
-                            "description":"Explore Now!",
-                            "image":"./images/category-men-jeans.jpg"   
-                        },
-                        {
-                            "title":"Hoodies & Sweetshirt",
-                            "description":"Explore Now!",
-                            "image":"./images/category-men-hoodies.png"   
-                        },
-                        {
-                            "title":"T-Shirts",
-                            "description":"Explore Now!",
-                            "image":"./images/category-men-tshirts.png"   
-                        }
-                    ]
-                }
-            ]
-        }
-    },
-    "footer":{
-        "items":[
-            {
-                "title":"Need Help",
-                "list":[
-                    {
-                        "label":"Contact Us",
-                        "path":"/contact-us"
-                    },
-                    {
-                        "label":"Track Order",
-                        "path":"/track-order"
-                    },
-                    {
-                        "label":"Returns & Refunds",
-                        "path":"/refunds"
-                    },
-                    {
-                        "label":"FAQ's",
-                        "path":"/faq"
-                    },
-                    {
-                        "label":"Career",
-                        "path":"/career"
-                    }
-                ]
-            },
-            {
-                "title":"Company",
-                "list":[
-                    {
-                        "label":"About Us",
-                        "path":"/about"
-                    },
-                    {
-                        "label":"Media",
-                        "path":"/media"
-                    }
-                ]
-            },
-            {
-                "title":"More Info",
-                "list":[
-                    {
-                        "label":"Term and Conditions",
-                        "path":"/terms-conditions"
-                    },
-                    {
-                        "label":"Privacy Policy",
-                        "path":"/policies"
-                    },
-                    {
-                        "label":"Shipping Policy",
-                        "path":"/policies"
-                    }
-                ]
-            },
-            {
-                "title":"Location",
-                "description":"Location Country"
-            }
-        ],
-        "copyright":"Copyright © 2024 aether"
-    },
-    "categories": [
+  "pages": {
+    "app": {
+      "sections": [
         {
-          "id": 1,
-          "name": "Men",
-          "code": "MEN",
-          "path":"/men",
-          "description":"Men's Clothing",
-          "types": [
+          "title": "Categories For Women",
+          "data": [
             {
-              "id": 1,
-              "name": "Jeans",
-              "description": "Men's jeans"
+              "title": " Sweetshirt",
+              "description": "Explore Now!",
+              "image": "./images/category-women-hoodies.jpg"
             },
             {
-              "id": 2,
-              "name": "Shirts",
-              "description": "Men's shirts"
+              "title": "Coats & Parkas",
+              "description": "Explore Now!",
+              "image": "./images/category-women-coats.jpg"
             },
             {
-              "id": 3,
-              "name": "Shorts",
-              "description": "Men's shorts"
+              "title": "Tees & T-Shirt",
+              "description": "Explore Now!",
+              "image": "./images/category-women-tshirts.png"
             },
             {
-              "id": 4,
-              "name": "T-shirts",
-              "description": "Men's t-shirts"
-            },
-            {
-              "id": 14,
-              "name": "Hoodie's",
-              "description": "Men's Hoodie"
+              "title": "Shorts",
+              "description": "Explore Now!",
+              "image": "./images/category-women-shorts.jpg"
             }
-          ],
-          "meta_data":{
-            "colors":["Black", "White", "Purple", "Gray", "Blue","Red","Orange","Navy","Grey","Yellow","Pink","Green"],
-            "sizes":["S","M","L","XL","XXL"]
-          }
+          ]
         },
         {
-          "id": 2,
-          "name": "Women",
-          "code": "WOMEN",
-          "path":"/women",
-          "description":"Women's Clothing",
-          "types": [
+          "title": "Categories For Men",
+          "data": [
             {
-              "type_id": 5,
-              "code":"DRESSES",
-              "name": "Dresses"
+              "title": "Shirts",
+              "description": "Explore Now!",
+              "image": "./images/category-men-shirts.jpg"
             },
             {
-              "type_id": 6,
-              "code":"CROPTOP",
-              "name": "Crop Top"
+              "title": "Jeans",
+              "description": "Explore Now!",
+              "image": "./images/category-men-jeans.jpg"
             },
             {
-              "type_id": 7,
-              "code":"SHORTS",
-              "name": "Shorts"
+              "title": "Hoodies & Sweetshirt",
+              "description": "Explore Now!",
+              "image": "./images/category-men-hoodies.png"
             },
             {
-              "type_id": 8,
-              "code":"JEANS",
-              "name": "Jeans"
-            },
-            {
-              "type_id": 9,
-              "code":"TSHIRTS",
-              "name": "T-shirt"
-            },
-            {
-              "type_id": 10,
-              "code":"SWEATSHIRT",
-              "name": "Hoodie/Sweatshirt"
-            },
-            {
-              "type_id": 11,
-              "code":"TOPS",
-              "name": "Tops"
-            },
-            {
-              "type_id": 12,
-              "code":"BOXERS",
-              "name": "Boxers"
-            },
-            {
-              "type_id": 13,
-              "code":"KURTIS",
-              "name": "Kurtis"
+              "title": "T-Shirts",
+              "description": "Explore Now!",
+              "image": "./images/category-men-tshirts.png"
             }
-          ],
-          "meta_data":{
-            "colors":["Black", "White", "Purple", "Gray", "Blue","Red","Orange","Navy","Grey","Yellow","Pink","Green"],
-            "sizes":["S","M","L","XL","XXL"]
-          }
-        },
-        {
-          "id": 3,
-          "name": "Kids",
-          "code": "KIDS",
-          "path":"/kids",
-          "description":"Kids Clothing",
-          "types": [
-            {
-              "id": 15,
-              "name": "T-shirts",
-              "description": "Kids' t-shirts"
-            },
-            {
-              "id": 16,
-              "name": "Shorts",
-              "description": "Kids' shorts"
-            },
-            {
-              "id": 17,
-              "name": "Dresses",
-              "description": "Kids' dresses"
-            },
-            {
-              "id": 18,
-              "name": "Jeans",
-              "description": "Kids' jeans"
-            }
-          ],
-          "meta_data":{}
+          ]
         }
-    ],
-    "products":[
+      ]
+    }
+  },
+  "footer": {
+    "items": [
       {
-        "id": 1,
-        "title": "Black Sweatshirt",
-        "description": "100% Bio-washed Cotton – makes the fabric extra soft & silky. Flexible ribbed crew neck. Precisely stitched with no pilling & no fading. Provide  all-time comfort. Anytime, anywhere. Infinite range of matte-finish HD prints.",
-        "category_id": 2,
-        "type_id": 10,
-        "brand": "Nike",
-        "price": 49.99,
-        "size": ["S", "M", "L"],
-        "color": ["Black","Blue"],
-        "discount": 20,
-        "thumbnail": "https://codedev.b-cdn.net/products/sweatshirt-black.jpg",
-        "images": ["https://codedev.b-cdn.net/products/sweatshirt-black.jpg", "https://codedev.b-cdn.net/products/woman-black-shirt-giving-neutral-flirtatious-poses.jpg","https://codedev.b-cdn.net/products/woman-holding-coffee-cup-smiling.jpg"],
-        "rating": 4.5
+        "title": "Need Help",
+        "list": [
+          {
+            "label": "Contact Us",
+            "path": "/contact-us"
+          },
+          {
+            "label": "Track Order",
+            "path": "/track-order"
+          },
+          {
+            "label": "Returns & Refunds",
+            "path": "/refunds"
+          },
+          {
+            "label": "FAQ's",
+            "path": "/faq"
+          },
+          {
+            "label": "Career",
+            "path": "/career"
+          }
+        ]
       },
       {
-        "id": 2,
-        "title": "White T-shirt",
-        "description": "A stylish white t-shirt for women",
-        "category_id": 2,
-        "type_id": 9,
-        "brand": "TrendyWear",
-        "price": 29.99,
-        "size": ["S", "M", "L"],
-        "color": ["White"],
-        "discount": 15,
-        "images": ["https://codedev.b-cdn.net/products/tshirt-white.jpg", "https://codedev.b-cdn.net/products/tshirt-white.jpg"],
-        "thumbnail": "https://codedev.b-cdn.net/products/tshirt-white.jpg",
-        "rating": 4.5
+        "title": "Company",
+        "list": [
+          {
+            "label": "About Us",
+            "path": "/about"
+          },
+          {
+            "label": "Media",
+            "path": "/media"
+          }
+        ]
       },
       {
-        "id": 3,
-        "title": "Purple Hoodie",
-        "description": "A cozy purple hoodie for women",
-        "category_id": 2,
-        "type_id": 10,
-        "brand": "Nike",
-        "price": 69.99,
-        "size": ["S", "M", "L"],
-        "color": ["Purple"],
-        "discount": 10,
-        "images": ["hoodie-purple1.jpg", "hoodie-purple2.jpg"],
-        "thumbnail": "https://codedev.b-cdn.net/products/hoodie-purple.jpg",
-        "rating": 4.6
+        "title": "More Info",
+        "list": [
+          {
+            "label": "Term and Conditions",
+            "path": "/terms-conditions"
+          },
+          {
+            "label": "Privacy Policy",
+            "path": "/policies"
+          },
+          {
+            "label": "Shipping Policy",
+            "path": "/policies"
+          }
+        ]
       },
       {
-        "id": 4,
-        "title": "Leaves Pattern White Dress",
-        "description": "A beautiful leaves pattern white dress for women",
-        "category_id": 2,
-        "type_id": 5,
-        "brand": "SummerVibes",
-        "price": 79.99,
-        "size": ["S", "M", "L"],
-        "color": ["White"],
-        "discount": 5,
-        "images": ["dress-white-leaves1.jpg", "dress-white-leaves2.jpg"],
-        "thumbnail": "https://codedev.b-cdn.net/products/dress-white-leaves.jpg",
-        "rating": 4.7
-      },
-      {
-        "id": 5,
-        "title": "White Graphic Crop Top",
-        "description": "A trendy white graphic crop top for women",
-        "category_id": 2,
-        "type_id": 9,
-        "brand": "TrendyWear",
-        "price": 39.99,
-        "size": ["S", "M", "L"],
-        "color": ["White"],
-        "discount": 10,
-        "images": ["crop-top-white1.jpg", "crop-top-white2.jpg"],
-        "thumbnail": "https://codedev.b-cdn.net/products/crop-top-white.jpeg",
-        "rating": 4.3
-      },
-      {
-        "id": 6,
-        "title": "Black Shorts",
-        "description": "Stylish black shorts for women",
-        "category_id": 2,
-        "type_id": 7,
-        "brand": "Nike",
-        "price": 34.99,
-        "size": ["S", "M", "L"],
-        "color": ["Black"],
-        "discount": 15,
-        "images": ["shorts-black1.jpg", "shorts-black2.jpg"],
-        "thumbnail": "https://codedev.b-cdn.net/products/shorts-black.jpeg",
-        "rating": 4.5
-      },
-      {
-        "id": 7,
-        "title": "Women's Skinny Jeans",
-        "description": "Trendy women's skinny jeans for a stylish look",
-        "category_id": 2,
-        "type_id": 8,
-        "brand": "ChicStyle",
-        "price": 59.99,
-        "size": ["S", "M", "L"],
-        "color": ["Blue"],
-        "discount": 10,
-        "images": ["jeans-blue1.jpg", "jeans-blue2.jpg"],
-        "thumbnail": "https://codedev.b-cdn.net/products/jeans-blue.jpeg",
-        "rating": 4.8
-      },
-      {
-        "id": 8,
-        "title": "Crewneck Sweatshirt",
-        "description": "Comfortable crewneck sweatshirt for women",
-        "category_id": 2,
-        "type_id": 10,
-        "brand": "TrendyWear",
-        "price": 44.99,
-        "size": ["S", "M", "L"],
-        "color": ["Gray"],
-        "discount": 10,
-        "images": ["sweatshirt-gray1.jpg", "sweatshirt-gray2.jpg"],
-        "thumbnail": "https://codedev.b-cdn.net/products/sweatshirt-crewneck.jpeg",
-        "rating": 4.6
-      },
-      {
-        "id": 9,
-        "title": "Denim Shorts",
-        "description": "Stylish denim shorts for women",
-        "category_id": 2,
-        "type_id": 7,
-        "brand": "SummerVibes",
-        "price": 39.99,
-        "size": ["S", "M", "L"],
-        "color": ["Blue"],
-        "discount": 15,
-        "images": ["shorts-denim1.jpg", "shorts-denim2.jpg"],
-        "thumbnail": "https://codedev.b-cdn.net/products/shorts-denim.jpeg",
-        "rating": 4.7
-      },
-      {
-        "id": 10,
-        "title": "Black Plain T-shirt",
-        "description": "Classic black plain t-shirt for women",
-        "category_id": 2,
-        "type_id": 9,
-        "brand": "Nike",
-        "price": 24.99,
-        "size": ["S", "M", "L"],
-        "color": ["Black"],
-        "discount": 10,
-        "images": ["tshirt-black1.jpg", "tshirt-black2.jpg"],
-        "thumbnail": "https://codedev.b-cdn.net/products/tshirt-black.jpg",
-        "rating": 4.5
-      },
-      {
-        "id": 11,
-        "title": "Blue Flower Print Crop Top",
-        "description": "Stylish blue flower print crop top for women",
-        "category_id": 2,
-        "type_id": 9,
-        "brand": "TrendyWear",
-        "price": 34.99,
-        "size": ["S", "M", "L"],
-        "color": ["Blue"],
-        "discount": 15,
-        "images": ["crop-top-blue-flower1.jpg", "crop-top-blue-flower2.jpg"],
-        "thumbnail": "https://codedev.b-cdn.net/products/crop-top-blue-flower.jpeg",
-        "rating": 4.3
-      },
-      {
-        "id": 12,
-        "title": "Black Crop Top",
-        "description": "Stylish black crop top for women",
-        "category_id": 2,
-        "type_id": 9,
-        "brand": "TrendyWear",
-        "price": 29.99,
-        "size": ["S", "M", "L"],
-        "color": ["Black"],
-        "discount": 10,
-        "images": ["crop-top-black1.jpg", "crop-top-black2.jpg"],
-        "thumbnail": "https://codedev.b-cdn.net/products/crop-top-black.jpeg",
-        "rating": 4.2
-      },
-      {
-        "id": 13,
-        "title": "Black T-Shirt",
-        "description": "Classic black t-shirt for men",
-        "category_id": 1,
-        "type_id": 4,
-        "brand": "Nike",
-        "price": 24.99,
-        "size": ["M", "L", "XL"],
-        "color": ["Black"],
-        "discount": 10,
-        "images": ["black-tshirt1.jpg", "black-tshirt2.jpg"],
-        "thumbnail": "https://codedev.b-cdn.net/products/black-tshirt.jpeg",
-        "rating": 4.5
-      },
-      {
-        "id": 14,
-        "title": "White Hoodie",
-        "description": "Comfortable white hoodie for men",
-        "category_id": 1,
-        "type_id": 14,
-        "brand": "Adidas",
-        "price": 59.99,
-        "size": ["M", "L", "XL"],
-        "color": ["White"],
-        "discount": 15,
-        "images": ["white-hoodie1.jpg", "white-hoodie2.jpg"],
-        "thumbnail": "https://codedev.b-cdn.net/products/white-hoodie.jpeg",
-        "rating": 4.7
-      },
-      {
-        "id": 15,
-        "title": "Blue Jeans",
-        "description": "Stylish blue jeans for men",
-        "category_id": 1,
-        "type_id": 1,
-        "brand": "Levis",
-        "price": 49.99,
-        "size": ["M", "L", "XL"],
-        "color": ["Blue"],
-        "discount": 20,
-        "images": ["blue-jeans1.jpg", "blue-jeans2.jpg"],
-        "thumbnail": "https://codedev.b-cdn.net/products/blue-jeans.jpg",
-        "rating": 4.6
-      },
-      {
-        "id": 16,
-        "title": "Gray Shorts",
-        "description": "Comfortable gray shorts for men",
-        "category_id": 1,
-        "type_id": 3,
-        "brand": "Puma",
-        "price": 29.99,
-        "size": ["M", "L", "XL"],
-        "color": ["Gray"],
-        "discount": 10,
-        "images": ["gray-shorts1.jpg", "gray-shorts2.jpg"],
-        "thumbnail": "https://codedev.b-cdn.net/products/gray-shorts.jpg",
-        "rating": 4.4
-      },
-      {
-        "id": 17,
-        "title": "Black Hoodie",
-        "description": "Comfortable black hoodie for men",
-        "category_id": 1,
-        "type_id": 14,
-        "brand": "Adidas",
-        "price": 59.99,
-        "size": ["M", "L", "XL"],
-        "color": ["Black"],
-        "discount": 15,
-        "images": ["black-hoodie1.jpg", "black-hoodie2.jpg"],
-        "thumbnail": "https://codedev.b-cdn.net/products/black-hoodie.jpeg",
-        "rating": 4.8
+        "title": "Location",
+        "description": "Location Country"
       }
-
-    ]
-
+    ],
+    "copyright": "Copyright © 2024 aether"
+  },
+  "categories": [
+    {
+      "id": 1,
+      "name": "Men",
+      "code": "MEN",
+      "path": "/men",
+      "description": "Men's Clothing",
+      "types": [
+        {
+    "id": 1,
+    "name": "Denim Collection",
+    "description": "Premium men's jeans crafted for comfort and style."
+  },
+  {
+    "id": 2,
+    "name": "Tailored Shirts",
+    "description": "Sophisticated shirts designed for the modern man."
+  },
+  {
+    "id": 3,
+    "name": "Casual Shorts",
+    "description": "Men’s shorts, perfect for relaxed yet refined looks."
+  },
+  {
+    "id": 4,
+    "name": "Essential Tees",
+    "description": "Premium quality t-shirts for versatile styling."
+  }
+      ],
+      "meta_data": {
+        
+        "sizes": ["S", "M", "L", "XL", "XXL"]
+      }
+    },
+    {
+      "id": 2,
+      "name": "Women",
+      "code": "WOMEN",
+      "path": "/women",
+      "description": "Women's Items",
+      "types": [
+        {
+          "type_id": 5,
+          "code": "Bangles",
+          "name": "Premium Bangles"
+        },
+        {
+          "type_id": 6,
+          "code": "Earrings",
+          "name": "Exclusive Earrings"
+        },
+        {
+          "type_id": 7,
+          "code": "Watches",
+          "name": "Luxury Watches"
+        },
+        {
+          "type_id": 8,
+          "code": "Rings",
+          "name": "Elegant Rings"
+        },
+        {
+          "type_id": 9,
+          "code": "Necklaces",
+          "name": "Timeless Necklaces"
+        },
+        {
+          "type_id": 10,
+          "code": "Bracelets",
+          "name": "Sculpted Bracelets"
+        },
+        {
+          "type_id": 11,
+          "code": "Pendants",
+          "name": "Refined Pendants"
+        },
+        {
+          "type_id": 12,
+          "code": "Brooches",
+          "name": "Artistic Brooches"
+        },
+        {
+          "type_id": 13,
+          "code": "Cufflinks",
+          "name": "Distinguished Cufflinks"
+        }
+      ],
+      "meta_data": {
+        "sizes": ["S", "M", "L", "XL", "XXL"]
+      }
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Black Sweatshirt",
+      "description": "100% Bio-washed Cotton – makes the fabric extra soft & silky. Flexible ribbed crew neck. Precisely stitched with no pilling & no fading. Provide  all-time comfort. Anytime, anywhere. Infinite range of matte-finish HD prints.",
+      "category_id": 2,
+      "type_id": 10,
+      "brand": "Nike",
+      "price": 49.99,
+      "size": ["S", "M", "L"],
+      "color": ["Black", "Blue"],
+      "discount": 20,
+      "thumbnail": "https://codedev.b-cdn.net/products/sweatshirt-black.jpg",
+      "images": [
+        "https://codedev.b-cdn.net/products/sweatshirt-black.jpg",
+        "https://codedev.b-cdn.net/products/woman-black-shirt-giving-neutral-flirtatious-poses.jpg",
+        "https://codedev.b-cdn.net/products/woman-holding-coffee-cup-smiling.jpg"
+      ],
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "title": "White T-shirt",
+      "description": "A stylish white t-shirt for women",
+      "category_id": 2,
+      "type_id": 9,
+      "brand": "TrendyWear",
+      "price": 29.99,
+      "size": ["S", "M", "L"],
+      "color": ["White"],
+      "discount": 15,
+      "images": [
+        "https://codedev.b-cdn.net/products/tshirt-white.jpg",
+        "https://codedev.b-cdn.net/products/tshirt-white.jpg"
+      ],
+      "thumbnail": "https://codedev.b-cdn.net/products/tshirt-white.jpg",
+      "rating": 4.5
+    },
+    {
+      "id": 3,
+      "title": "Purple Hoodie",
+      "description": "A cozy purple hoodie for women",
+      "category_id": 2,
+      "type_id": 10,
+      "brand": "Nike",
+      "price": 69.99,
+      "size": ["S", "M", "L"],
+      "color": ["Purple"],
+      "discount": 10,
+      "images": ["hoodie-purple1.jpg", "hoodie-purple2.jpg"],
+      "thumbnail": "https://codedev.b-cdn.net/products/hoodie-purple.jpg",
+      "rating": 4.6
+    },
+    {
+      "id": 4,
+      "title": "Leaves Pattern White Dress",
+      "description": "A beautiful leaves pattern white dress for women",
+      "category_id": 2,
+      "type_id": 5,
+      "brand": "SummerVibes",
+      "price": 79.99,
+      "size": ["S", "M", "L"],
+      "color": ["White"],
+      "discount": 5,
+      "images": ["dress-white-leaves1.jpg", "dress-white-leaves2.jpg"],
+      "thumbnail": "https://codedev.b-cdn.net/products/dress-white-leaves.jpg",
+      "rating": 4.7
+    },
+    {
+      "id": 5,
+      "title": "White Graphic Crop Top",
+      "description": "A trendy white graphic crop top for women",
+      "category_id": 2,
+      "type_id": 9,
+      "brand": "TrendyWear",
+      "price": 39.99,
+      "size": ["S", "M", "L"],
+      "color": ["White"],
+      "discount": 10,
+      "images": ["crop-top-white1.jpg", "crop-top-white2.jpg"],
+      "thumbnail": "https://codedev.b-cdn.net/products/crop-top-white.jpeg",
+      "rating": 4.3
+    },
+    {
+      "id": 6,
+      "title": "Black Shorts",
+      "description": "Stylish black shorts for women",
+      "category_id": 2,
+      "type_id": 7,
+      "brand": "Nike",
+      "price": 34.99,
+      "size": ["S", "M", "L"],
+      "color": ["Black"],
+      "discount": 15,
+      "images": ["shorts-black1.jpg", "shorts-black2.jpg"],
+      "thumbnail": "https://codedev.b-cdn.net/products/shorts-black.jpeg",
+      "rating": 4.5
+    },
+    {
+      "id": 7,
+      "title": "Women's Skinny Jeans",
+      "description": "Trendy women's skinny jeans for a stylish look",
+      "category_id": 2,
+      "type_id": 8,
+      "brand": "ChicStyle",
+      "price": 59.99,
+      "size": ["S", "M", "L"],
+      "color": ["Blue"],
+      "discount": 10,
+      "images": ["jeans-blue1.jpg", "jeans-blue2.jpg"],
+      "thumbnail": "https://codedev.b-cdn.net/products/jeans-blue.jpeg",
+      "rating": 4.8
+    },
+    {
+      "id": 8,
+      "title": "Crewneck Sweatshirt",
+      "description": "Comfortable crewneck sweatshirt for women",
+      "category_id": 2,
+      "type_id": 10,
+      "brand": "TrendyWear",
+      "price": 44.99,
+      "size": ["S", "M", "L"],
+      "color": ["Gray"],
+      "discount": 10,
+      "images": ["sweatshirt-gray1.jpg", "sweatshirt-gray2.jpg"],
+      "thumbnail": "https://codedev.b-cdn.net/products/sweatshirt-crewneck.jpeg",
+      "rating": 4.6
+    },
+    {
+      "id": 9,
+      "title": "Denim Shorts",
+      "description": "Stylish denim shorts for women",
+      "category_id": 2,
+      "type_id": 7,
+      "brand": "SummerVibes",
+      "price": 39.99,
+      "size": ["S", "M", "L"],
+      "color": ["Blue"],
+      "discount": 15,
+      "images": ["shorts-denim1.jpg", "shorts-denim2.jpg"],
+      "thumbnail": "https://codedev.b-cdn.net/products/shorts-denim.jpeg",
+      "rating": 4.7
+    },
+    {
+      "id": 10,
+      "title": "Black Plain T-shirt",
+      "description": "Classic black plain t-shirt for women",
+      "category_id": 2,
+      "type_id": 9,
+      "brand": "Nike",
+      "price": 24.99,
+      "size": ["S", "M", "L"],
+      "color": ["Black"],
+      "discount": 10,
+      "images": ["tshirt-black1.jpg", "tshirt-black2.jpg"],
+      "thumbnail": "https://codedev.b-cdn.net/products/tshirt-black.jpg",
+      "rating": 4.5
+    },
+    {
+      "id": 11,
+      "title": "Blue Flower Print Crop Top",
+      "description": "Stylish blue flower print crop top for women",
+      "category_id": 2,
+      "type_id": 9,
+      "brand": "TrendyWear",
+      "price": 34.99,
+      "size": ["S", "M", "L"],
+      "color": ["Blue"],
+      "discount": 15,
+      "images": ["crop-top-blue-flower1.jpg", "crop-top-blue-flower2.jpg"],
+      "thumbnail": "https://codedev.b-cdn.net/products/crop-top-blue-flower.jpeg",
+      "rating": 4.3
+    },
+    {
+      "id": 12,
+      "title": "Black Crop Top",
+      "description": "Stylish black crop top for women",
+      "category_id": 2,
+      "type_id": 9,
+      "brand": "TrendyWear",
+      "price": 29.99,
+      "size": ["S", "M", "L"],
+      "color": ["Black"],
+      "discount": 10,
+      "images": ["crop-top-black1.jpg", "crop-top-black2.jpg"],
+      "thumbnail": "https://codedev.b-cdn.net/products/crop-top-black.jpeg",
+      "rating": 4.2
+    },
+    {
+      "id": 13,
+      "title": "Black T-Shirt",
+      "description": "Classic black t-shirt for men",
+      "category_id": 1,
+      "type_id": 4,
+      "brand": "Nike",
+      "price": 24.99,
+      "size": ["M", "L", "XL"],
+      "color": ["Black"],
+      "discount": 10,
+      "images": ["black-tshirt1.jpg", "black-tshirt2.jpg"],
+      "thumbnail": "https://codedev.b-cdn.net/products/black-tshirt.jpeg",
+      "rating": 4.5
+    },
+    {
+      "id": 14,
+      "title": "White Hoodie",
+      "description": "Comfortable white hoodie for men",
+      "category_id": 1,
+      "type_id": 14,
+      "brand": "Adidas",
+      "price": 59.99,
+      "size": ["M", "L", "XL"],
+      "color": ["White"],
+      "discount": 15,
+      "images": ["white-hoodie1.jpg", "white-hoodie2.jpg"],
+      "thumbnail": "https://codedev.b-cdn.net/products/white-hoodie.jpeg",
+      "rating": 4.7
+    },
+    {
+      "id": 15,
+      "title": "Blue Jeans",
+      "description": "Stylish blue jeans for men",
+      "category_id": 1,
+      "type_id": 1,
+      "brand": "Levis",
+      "price": 49.99,
+      "size": ["M", "L", "XL"],
+      "color": ["Blue"],
+      "discount": 20,
+      "images": ["blue-jeans1.jpg", "blue-jeans2.jpg"],
+      "thumbnail": "https://codedev.b-cdn.net/products/blue-jeans.jpg",
+      "rating": 4.6
+    },
+    {
+      "id": 16,
+      "title": "Gray Shorts",
+      "description": "Comfortable gray shorts for men",
+      "category_id": 1,
+      "type_id": 3,
+      "brand": "Puma",
+      "price": 29.99,
+      "size": ["M", "L", "XL"],
+      "color": ["Gray"],
+      "discount": 10,
+      "images": ["gray-shorts1.jpg", "gray-shorts2.jpg"],
+      "thumbnail": "https://codedev.b-cdn.net/products/gray-shorts.jpg",
+      "rating": 4.4
+    },
+    {
+      "id": 17,
+      "title": "Black Hoodie",
+      "description": "Comfortable black hoodie for men",
+      "category_id": 1,
+      "type_id": 14,
+      "brand": "Adidas",
+      "price": 59.99,
+      "size": ["M", "L", "XL"],
+      "color": ["Black"],
+      "discount": 15,
+      "images": ["black-hoodie1.jpg", "black-hoodie2.jpg"],
+      "thumbnail": "https://codedev.b-cdn.net/products/black-hoodie.jpeg",
+      "rating": 4.8
+    }
+  ]
 }

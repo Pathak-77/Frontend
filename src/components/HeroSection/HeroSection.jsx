@@ -5,7 +5,6 @@ import Men from "../../assets/img/men-jewellery.avif";
 import Women from "../../assets/img/women-jewellery.jpg";
 
 const HeroSection = () => {
-  const [isVisible, setIsVisible] = React.useState(true);
   const [scroll, setScroll] = React.useState(false);
 
   const handleScroll = () => {
@@ -14,9 +13,6 @@ const HeroSection = () => {
     }
   };
 
-  const EndState = () => {
-    setIsVisible(false);
-  };
   React.useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -89,7 +85,7 @@ const HeroSection = () => {
         {
           <AnimatePresence initial={false}>
             <motion.h1
-              className="absolute left-[11.84em] top-1/2 text-[50px] font-semibold"
+              className="absolute left-[11.84em] top-1/2 text-[50px] font-semibold font-poppins text-white"
               initial={{ offsetDistance: "0%", scale: 2.5 }}
               animate={
                 scroll
@@ -97,12 +93,9 @@ const HeroSection = () => {
                   : { offsetDistance: "100%", scale: 1 }
               }
               transition={transition}
-              onAnimationComplete={() => {
-                if (scroll) {
-                  EndState();
-                }
-              }}
+              
             >
+            
               AETHER
             </motion.h1>
           </AnimatePresence>

@@ -1,5 +1,4 @@
 import { React, useState } from "react";
-import { useSelector } from "react-redux";
 import { AccountIcon } from "../icon/AccountIcon";
 import { CartIcon } from "../icon/CartIcon";
 import { Link, useNavigate } from "react-router-dom";
@@ -54,7 +53,7 @@ export default function GlassmorphNavbar({ menuOpen }) {
         </div>
 
         <div className="flex-shrink-0 pl-[110px]">
-          <h1 className="text-xl text-white font-semibold">A3THER</h1>
+          <Link to='/'><h1 className="text-xl text-white font-semibold">A3THER</h1></Link>
         </div>
 
         {/*Search bar and icon */}
