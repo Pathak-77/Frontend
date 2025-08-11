@@ -2,7 +2,6 @@ import React, { useEffect, useMemo, useState } from "react";
 import FilterIcon from "../../../components/icon/FilterIcon";
 import content from "../../../data/content.json"
 import Categories from "../../../components/Filters/Categories"
-import ColorsFilter from "../../../components/Filters/ColorsFilter"
 import PriceFilter from "../../../components/Filters/PriceFilter"
 import SizeFilter from "../../../components/Filters/SizeFilter"
 import { getAllProducts } from '../../../api/fetchProducts';
@@ -66,9 +65,7 @@ const ProductList = ({categoryType}) => {
           {/* Price */}
           <PriceFilter />
           <hr></hr>
-          {/* Colors */}
-          <ColorsFilter colors={categoryContent?.meta_data?.colors} />
-          <hr></hr>
+          
           {/* Sizes */}
           <SizeFilter sizes={categoryContent?.meta_data?.sizes} />
         </div>

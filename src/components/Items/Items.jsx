@@ -4,12 +4,23 @@ import Exchange from "../../assets/img/easy_exchange.jpeg";
 import Wrapping from "../../assets/img/gift_wrapping.jpeg";
 import GlassPanel from "../GlassPanel/GlassPanel";
 
-
 const Items = () => {
   const panelItem = [
-    { id: 1, text: "aaa", header: "head1" },
-    { id: 2, text: "bbb", header: "head2" },
-    { id: 3, text: "ccc", header: "head3" },
+    {
+      id: 1,
+      text: "Enjoy the ease of complimentary delivery on every order. Your carefully chosen gift will arrive swiftly and securely, with no hidden fees. We prioritize a seamless experience, so you can focus on the joy of giving while we handle the rest.",
+      header: "Complementry Delivery",
+    },
+    {
+      id: 2,
+      text: "Share the joy of giving with a thoughtful gift at no extra cost. Personalize your present by mentioning your loved ones, making every moment unforgettable. Our curated selection ensures your gift is as unique as they are, crafted to bring smiles and lasting memories.",
+      header: "Gift",
+    },
+    {
+      id: 3,
+      text: "Shop with confidence thanks to our hassle-free 30-day return policy. If your gift isn’t perfect, return it effortlessly with our straightforward process. We’re committed to making your experience stress-free, ensuring every purchase feels just right.",
+      header: "Returns",
+    },
   ];
 
   const [click, setClick] = useState(false);
@@ -46,15 +57,12 @@ const Items = () => {
         />
       </button>
 
-     
-          
-          <GlassPanel
-            header={panelItem[itemIndex].header}
-            text={panelItem[itemIndex].text}
-            visible = {click}
-            onClose={()=> setClick(false)}
-          />
-       
+      <GlassPanel
+        header={panelItem[itemIndex].header}
+        text={panelItem[itemIndex].text}
+        visible={click}
+        onClose={() => setClick(false)}
+      />
     </div>
   );
 };
