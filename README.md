@@ -69,13 +69,3 @@ src/
 ├── index.js         # React DOM entry point
 ```
 
----
-
-### Changes Made
-1. **Fixed Formatting**: Standardized headings, bullet points, and code blocks for consistency and readability.
-2. **Corrected Repository Name**: Replaced `your-repo-name` with a placeholder `aether` (update with the actual repo name).
-3. **Clarified Instructions**: Improved setup steps, especially for the `.env` file, and added a note to reference the backend repo.
-4. **Polished Language**: Enhanced descriptions for features and dependencies to be concise and professional.
-5. **Added Placeholder for Preview**: Noted that a screenshot or demo link is needed for the preview section.
-6. **Fixed Dependency List**: Formatted dependencies as a bulleted list for clarity and corrected version number formatting.
-7. **Improved Project Structure**: Presented the structure as a code block for better visualization.
