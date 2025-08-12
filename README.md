@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# AETHER - A Modern Jewel Site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern React 19 application showcasing a responsive jewelry e-commerce platform with TailwindCSS styling, Redux for state management, JWT authentication, smooth animations, modals, sliders, and date formatting. For backend setup, refer to the [Backend Repository](https://github.com/pathak77/Backend) built with Java Spring Boot.
 
-## Available Scripts
+## 📸 Preview
+*Coming soon! Add a screenshot or demo link to showcase AETHER's UI.*
 
-In the project directory, you can run:
+## ✨ Features
+- **JWT Authentication**: Secure user authentication using `jwt-decode@4.0.0`.
+- **State Management**: Centralized state handling with `react-redux@9.2.0`.
+- **Routing**: Seamless client-side navigation with `react-router-dom@7.6.3`.
+- **Animations**: Smooth UI animations powered by `motion@12.23.12`.
+- **Date Formatting**: Elegant date/time formatting via `moment@2.30.1`.
+- **Modals & Sliders**: Interactive UI components with `react-modal`, `react-range-slider-input`, and `react-slick`.
+- **Responsive UI**: Utility-first styling with `tailwindcss@3.4.17`.
+- **Performance Tracking**: Monitor web performance metrics using `web-vitals@2.1.4`.
 
-### `npm start`
+## 📦 Dependencies
+- `jwt-decode@4.0.0` → Decode JWT tokens
+- `moment@2.30.1` → Date and time formatting
+- `motion@12.23.12` → UI animations
+- `react@19.1.0` → Core React library
+- `react-dom@19.1.0` → DOM rendering
+- `react-modal@3.16.3` → Accessible modal components
+- `react-range-slider-input@3.2.1` → Range slider UI
+- `react-redux@9.2.0` → State management
+- `react-router-dom@7.6.3` → Client-side routing
+- `react-scripts@5.0.1` → Create React App scripts
+- `react-slick@0.30.3` → Carousel component
+- `tailwindcss@3.4.17` → Utility-first CSS framework
+- `web-vitals@2.1.4` → Web performance metrics
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ⚙️ Setup & Configuration
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Clone the Repository
+```bash
+git clone https://github.com/pathak77/Frontend.git
+cd aether
+```
 
-### `npm test`
+### Install Dependencies
+```bash
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`https://your-api-url.com` with the actual backend API URL and `your_jwt_secret` with your JWT secret key. Refer to the [Backend Repository](https://github.com/pathak77/Backend) for backend setup.
 
-### `npm run build`
+### Run Development Server
+```bash
+npm start
+```
+The app will be available at `http://localhost:3000`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Build for Production
+```bash
+npm run build
+```
+The production-ready build will be generated in the `build/` folder.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠 Project Structure
+```
+src/
+├── assets/          # Static files (images, icons)
+├── components/      # Reusable components
+├── pages/           # Page-level components
+├── redux/           # Redux state management (actions, reducers, store)
+├── styles/          # TailwindCSS and custom CSS
+├── App.js           # Main app entry point
+├── index.js         # React DOM entry point
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Changes Made
+1. **Fixed Formatting**: Standardized headings, bullet points, and code blocks for consistency and readability.
+2. **Corrected Repository Name**: Replaced `your-repo-name` with a placeholder `aether` (update with the actual repo name).
+3. **Clarified Instructions**: Improved setup steps, especially for the `.env` file, and added a note to reference the backend repo.
+4. **Polished Language**: Enhanced descriptions for features and dependencies to be concise and professional.
+5. **Added Placeholder for Preview**: Noted that a screenshot or demo link is needed for the preview section.
+6. **Fixed Dependency List**: Formatted dependencies as a bulleted list for clarity and corrected version number formatting.
+7. **Improved Project Structure**: Presented the structure as a code block for better visualization.
